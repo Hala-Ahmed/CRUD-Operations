@@ -1,0 +1,102 @@
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    
+<div class="container py-5">
+    <form >
+ <div><label for="productname" class=" pb-1">productName</label>
+    <input type="text" class="form-control " id="productname">
+    </div>
+
+<div><label for="productprice" class=" pt-3">productPrice</label>
+    <input type="number" class="form-control " id="productprice">
+    </div>
+
+
+<div><label for="productcategory" class=" pt-3">productCategory</label>
+    <select  class="form-select" id="productcategory">
+        <option value="tv">tv</option>
+    <option value="mobile">mobile</option>
+    <option value="labtop">labtop</option>
+</select>
+    </div>
+    
+
+
+<div><label for="productdescripton" class=" pt-3">productDescripton</label>
+    <textarea  class="form-control" id="productdescripton" cols="10" rows="3"></textarea>
+    </div>
+<button type="button" id="addproduct"  onclick="Addproduct()"  class="btn btn-outline-info  my-3">Add product</button>
+<button type="button" id="editproduct" style="display: none;"    onclick="Editproduct()"   class="btn btn-outline-info  my-3">Edit product</button>
+<button type="button" onclick="clearForm()"  class="btn btn-outline-danger my-3">Clear Form</button>
+
+    </form>
+    <div class="container py-5">
+        <input type="text"  onkeyup="search()" id="SearchInput"  class="form-control w-50 m-auto" placeholder="search......">
+        
+        </div>
+
+
+    <table class="table table-bordered table-striped">
+        <thead>
+       <tr>
+           <th>Index</th>
+           <th>ProductName</th>
+           <th>ProductPrice</th>
+           <th>ProductCategory</th>
+           <th>ProductDescripton</th>
+           <th>Update</th>
+           <th>Delete</th>
+       </tr>
+        </thead>
+       <tbody  id="tablrow">
+      
+       </tbody>
+       </table>
+       
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
